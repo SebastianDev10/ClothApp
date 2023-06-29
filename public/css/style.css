@@ -1,0 +1,236 @@
+body{
+    margin: 0;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: transparent linear-gradient(180deg, #0EF3DD 0%, #808080 100%) 0% 0% no-repeat padding-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 70%;
+    text-align: center;
+
+}
+
+.login-container {
+    width: 50%;
+}
+
+form.login, form.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 40vh;
+    background: #FFFFFFE0 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 6px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 57px;
+}
+
+form.register {
+    height: fit-content;
+}
+
+button {
+    background: #23DA41CC 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 29px;
+    width: 50%;
+    border: none;
+    color: white;
+    margin: 1em;
+    line-height: 2.5em;
+}
+
+
+input, textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 1em;
+    margin: 1em;
+    width: 50%;
+}
+@media only screen and (max-device-width: 420px) {
+    .container {
+        flex-direction: column;
+    }
+    * {
+        font-size: 18px;
+    }
+    .login-container, .logo {
+        width: 80%;
+    }
+    form {
+        margin: auto;
+    }
+    img {
+        
+        margin: 0em;
+    }
+
+    .base-container {
+        width: 100vw;
+        height: 100vh;
+    }
+    nav {
+        width: 100%;
+        height: 20vh;
+    }
+    main {
+        width: 100%;
+        height: 80vh;
+    }
+    .search-bar {
+        width: 90%;
+    }
+    .add-clothes, .add-project {
+        width: 80%;
+    }
+}
+    
+.base-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+nav {
+    width: 20vw;
+    height: 100%;
+    background: transparent linear-gradient(180deg, #15D4C2 0%, #0B6A61 100%) 0% 0% no-repeat padding-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+main {
+    width: 80vw;
+
+
+}
+
+
+nav > img {
+    width: 60%;
+    margin: 2em auto;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    line-height: 2em;
+    
+}
+li i {
+    font-size: 1.5em;
+}
+.button {
+    background: #CAF26D 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 1em;
+    margin-left: 1em;
+    text-align: center;
+    letter-spacing: 0.7px;
+    color: darkblue;
+    padding: 0.2px;
+    width: 60%;
+
+}
+ul {
+    
+    list-style-type: none;
+    color: black;
+    font: normal normal normal 20px/24px Tahoma;
+    letter-spacing: 0px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    width: calc(100% - 40px);
+    position: relative;
+}
+li {
+    
+    text-align: left;
+    color: black;
+    margin-bottom: 1em;
+}
+li:last-child {
+    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    border-bottom: 1px solid gray;
+}
+.add-clothes {
+    background: transparent linear-gradient(180deg, #1ADBE1 0%, #0D6E71 100%) 0% 0% no-repeat padding-box;
+    border: 1px solid #1F26F1; 
+    /*border-radius: 1.5em; */
+    letter-spacing: 0.1px;
+    color: black;
+    text-align: center;
+    width: 20%;
+
+}
+.add-clothes > i {
+    padding: 1em;
+}
+.search-bar {
+    width: 70%;
+
+}
+.search-bar > input {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 3px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 24px;
+    width: 100%;
+    text-align: center;
+    color: gray;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.72px;
+}
+
+.no-valid {
+    border: 3px solid red;
+    border-radius: 1em;
+    box-shadow: 0 0 0.2em red;
+    outline: none;
+}
+.add-project {
+    background: transparent linear-gradient(180deg, #1ADBE1 0%, #0D6E71 100%) 0% 0% no-repeat padding-box;
+    border: 1px solid #1F26F1; 
+    /*border-radius: 1.5em; */
+    letter-spacing: 0.1px;
+    color: black;
+    text-align: center;
+    width: 20%;
+}
+
+.add-project > i {
+    padding: 1em;
+}

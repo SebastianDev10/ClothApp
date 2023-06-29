@@ -1,0 +1,39 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-image: url("/public/img/AaHOd.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.description {
+    margin-top: 20px;
+}
+
+.description h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.description p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.image-container img#oip-image {
+    max-width: 300px;
+    height: auto;
+}
+.people-image img#people-image {
+    max-width: 300px;
+    height: auto;
+}
